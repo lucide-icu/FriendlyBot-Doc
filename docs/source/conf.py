@@ -24,7 +24,7 @@ copyright = u'2020, FriendlyBot Staff'
 author = u'FriendlyBot Staff'
 
 # The short X.Y version
-version = u''
+version = u'1.0'
 # The full version, including alpha/beta/rc tags
 release = u'closed-beta'
 
@@ -39,6 +39,7 @@ release = u'closed-beta'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'rst2pdf.pdfbuilder'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -171,3 +172,15 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
+
+# -- Options for PDF output --------------------------------------------------
+
+# * By TheFrenchCoder
+# * Follow the guide : https://gist.github.com/alfredodeza/7fb5c667addb1c6963b9 thanks to him.
+
+
+pdf_documents = [(master_doc, u'rst2pdf.pdfbuilder', u'FriendlyBot', u'FriendlyBot Staff'),]
+# - master_doc                =>  master document
+# - rst2pdf                   =>  name of the generated pdf
+# - FriendlyBot Documentation =>  title of the pdf
+# - FriendlyBot Staff         =>  author name in the pdf
