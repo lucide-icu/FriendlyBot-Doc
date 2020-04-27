@@ -1,5 +1,26 @@
 # Contribute
 
+[...Pour les non-anglophones d'entres vous...](https://www.deepl.com/translator)
+
+1. Fork the project & clone locally.
+2. Create an upstream remote and sync your local copy before you branch.
+3. Branch for each separate piece of work.
+4. Do the work, write good commit messages, and read the CONTRIBUTING file if there is one.
+5. Push to your origin repository.
+6. Create a new PR in GitHub.
+7. Respond to any code review feedback.
+
+
+## Commits
+
+Title:
+    - Add (<file_name>) <part_name>
+    - Remove (<file_name>) <part_name>
+    - Fix <"rST Syntaxe" || "Grammar"> : <section_name>
+
+Content : Optionnal
+    Briefly describe why you made these changes
+
 La documentation est écrite en .rst soit en reStructuredText, voici quelques ressources si vous souhaitez contribuer:  
 The documentation is written in .rst or reStructuredText, here are some resources if you wish to contribute:
 - FR : https://github.com/DevDungeon/reStructuredText-Documentation-Reference#introduction  
@@ -34,3 +55,9 @@ Take a look at :
 - https://www.sphinx-doc.org/en/master/faq.html
 
 - https://github.com/brechtm/rinohtype
+
+
+
+
+
+Made with ❤️ by the community (aka TheFrenchCoder for the moment)
