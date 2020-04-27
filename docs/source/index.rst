@@ -47,7 +47,7 @@ Les membres premium
 * Kritune, le dév' de plugins du „ TURFU “.
 * Théo, le gentleman de la sécurité des lignes de codes de FriendlyBot.
 
-**Foire aux questions (FAQ)**
+**1. Foire aux questions (FAQ)**
 =============================
 
 Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œil par ici, avant de poster une demande d'aide sur le forum.
@@ -58,6 +58,14 @@ Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œ
 ----------------------------------------------------------------------------
    * Vous avez entré des identifiants erronés.
    * Vous avez fermé récemment le logiciel, vous devez attendre quelques minutes.
+   
+**2. J'essaie d'ouvrir l'éxécutable FriendlyBot.exe mais rien ne se passe.**
+----------------------------------------------------------------------------
+   * Suprimer le fichier temporaire de FriendlyBot :
+      * ``Windows + R`` >> ``%appdata%`` >> ``Entrer``.
+      * Remonter d'un dossier.
+      * Chercher le dossier „ FriendlyBot “ et supprimer le.
+   * Supprimer le dossier „ plugins “ situe à côté de l'éxécutable.
 
 ****************
 **Installation**
@@ -352,6 +360,22 @@ Il suffit de remplacer l'action ``changeMap`` par ``gather``:
    {map = "[0, 0]", actions = {fight = true, gather = "c<Cell_ID>"}}
    -- Exemple :
    {map = "[0, 0]", actions = {fight = true, gather = "c459"}}
+
+PNJ
+^^^
+
+Si vous souhaitez interagir avec des Personnages Non-Joueurs (PNJ), il suffit d'utiliser l'action ``npc`` qui signifie Non-Player Character, l'anglais de PNJ:
+*⚠️ Il n'y qu'une seule action par map, dans les exemples qui suivent, il n'y a donc pas besoin de mettre ``{}`` mais ne les oubliez pa si vous spécifiez plusieures actions*
+
+.. code-block:: lua
+
+   {map = "[0, 0]", actions = npc(NpcID_or_ActorId, ActionID_or_Index, ReplyID_or_Index1, ReplyID|Index2, ...)}
+   -- Exemple :
+   {map = "[0, 0]", actions = npc(-20000, -1, -1,-1)}
+
+Se traduit par : 
+   *„ Parle au npc -20 000, avec la première option et ça répond avec les premiers truc possible dans les réponses ^^ “*
+   *Un grand merci à toi, Nicogo pour cet exemple de QUALITAIENT (ceci est une réf' 💋 TheFrenchCoder)*
 
 Havre-Sac, Zaap & Zaapi
 ^^^^^^^^^^^^^^^^^^^^^^^
