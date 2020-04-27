@@ -48,7 +48,7 @@ Les membres premium
 * Théo, le gentleman de la sécurité des lignes de codes de FriendlyBot.
 
 **1. Foire aux questions (FAQ)**
-=============================
+================================
 
 Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œil par ici, avant de poster une demande d'aide sur le forum.
    1. Cela vous évitera d'écrire pour rien.
