@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-   
+
 
 ##########################################
 La documentation officielle de FriendlyBot
@@ -47,20 +47,22 @@ Les membres premium
 * Kritune, le dév' de plugins du „ TURFU “.
 * Théo, le gentleman de la sécurité des lignes de codes de FriendlyBot.
 
-**1. Foire aux questions (FAQ)**
+**Foire aux questions (FAQ)**
 ================================
 
-Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œil par ici, avant de poster une demande d'aide sur le forum.
-   1. Cela vous évitera d'écrire pour rien.
-   2. Cela permettra aux administrateurs de se concentrer sur des soucis encore non résolu.
+   Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œil par ici, avant de poster une demande d'aide sur le forum.
+      1. Cela vous évitera d'écrire pour rien.
+      2. Cela permettra aux administrateurs de se concentrer sur des soucis encore non résolu.
 
-**J'ai une erreur d'identification lorsque je me connecte sur le logiciel.**
-----------------------------------------------------------------------------
+**1. J'ai une erreur d'identification lorsque je me connecte sur le logiciel.**
+-------------------------------------------------------------------------------
+
    * Vous avez entré des identifiants erronés.
    * Vous avez fermé récemment le logiciel, vous devez attendre quelques minutes.
    
 **2. J'essaie d'ouvrir l'éxécutable FriendlyBot.exe mais rien ne se passe.**
 ----------------------------------------------------------------------------
+
    * Suprimer le fichier temporaire de FriendlyBot :
       * ``Windows + R`` >> ``%appdata%`` >> ``Entrer``.
       * Remonter d'un dossier.
@@ -83,7 +85,9 @@ Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œ
 * Si vous souhaitez développer vos propres plugins pour FriendlyBot, installez :
    **Buils Apps .NET Core SDK**
 
-*▶️ : Veuillez à choisir la version correspondant à votre système d'exploitation, Windows, Linux ou OSX.*
+.. note::
+
+   ▶️ : Veuillez à choisir la version correspondant à votre système d'exploitation, Windows, Linux ou OSX.*
 
 .. _dotnet.microsoft.com: https://dotnet.microsoft.com/download
 
@@ -100,7 +104,8 @@ Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œ
 **Le Lua, quèsaco ?**
 ---------------------
 
-*Lua est un langage de script [...] conçu de manière à pouvoir être embarqué au sein d'autres applications afin d'étendre celles-ci.* `Wikipédia - Lua`_
+| *Lua est un langage de script [...] conçu de manière à pouvoir être embarqué au sein d'autres applications afin d'étendre celles-ci.*
+| `Wikipédia - Lua`_
 
 .. _`Wikipédia - Lua`: https://fr.wikipedia.org/wiki/Lua
 
@@ -143,12 +148,15 @@ réaliser un trajet avec FriendlyBot.
 * Faîtes un clique droit > „ Nouveau “ > „ Document Texte “.
 * Rentrer son nom „ MonScript.lua “.
 
-*⚠️ Attention à enlever l'ancienne extension : .txt*
+.. warning::
+
+   *Pensez à enlever l'ancienne extension : .txt.*
 
 * Répondez „ Oui “ à „ Voulez-vous vraiment modifier l'extension ? “.
 
-| *▶️ Il s'agit d'un sécurité de Windows, car l'extension renseigne également*
-| *sur le formatage du fichier, ne vous en souciez pas.*
+.. note::
+
+   ▶️ Il s'agit d'un sécurité de Windows, car l'extension renseigne égalementsur le formatage du fichier, ne vous en souciez pas.
 
 | Vous avez maintenant un fichier lua près à être rempli pour réaliser votre
 | premier trajet avec FriendlyBot.
@@ -160,7 +168,7 @@ réaliser un trajet avec FriendlyBot.
 ----------------------------
 
 | Voici un trajet simpliste, dépourvu de toutes instructions contenant
-| toutes les instructions indispensable:
+| toutes les instructions indispensable :
 
 .. code-block:: lua
 
@@ -234,7 +242,7 @@ Comme vu dans le chapitre précédent, les fonctions écrites en lua retournent 
 * Les tables contiennent les actions à réalisés sur une ou plusieurs map.
 
    * Les tables sont séparé par une virgule pour expliquer à FriendlyBot qu'il y'a encore d'autres tables après elles.
-   
+
    * La table finale ne se "termine" donc pas avec une virgule
 
 
@@ -257,10 +265,10 @@ Comme vu dans le chapitre précédent, les fonctions écrites en lua retournent 
 **Les actions**
 ---------------
 
-Il existe différents types d'actions, c'est ce que nous allons voir maintenant:
+Il existe différents types d'actions, c'est ce que nous allons voir maintenant :
 
-Maps
-^^^^
+**Maps**
+^^^^^^^^
 Le mot clé ``maps`` peut utiliser à la fois les **coordonnées** (abscisse, ordonnée) de la map obtenable en regardant sur la carte de Dofus mais aussi son id appelé le **mapId** obtenable en exécutant dans le chat en jeu ou via la console de FrienldyBot **/mapid**.
 Il est possible de définir les maps une à une ou via une liste alias une table en lua, si l'on souhaite réaliser plusieurs fois la même action :
 
@@ -273,8 +281,8 @@ Il est possible de définir les maps une à une ou via une liste alias une table
       {maps = {"[5,-22]", "192416776"}}
    }
 
-Les tables
-^^^^^^^^^^
+**Les tables**
+^^^^^^^^^^^^^^
 
 Le mot clé ``actions`` renseigne toutes les actions à réaliser au sein des maps définit par ``maps``. (Le code suivant serra sous la forme de „ vue en éclaté “)
 
@@ -294,12 +302,14 @@ Le mot clé ``actions`` renseigne toutes les actions à réaliser au sein des ma
       }
    }
 
-| 🟧 *L'interprétation des actions au sein de actions se fait de gauche à droite.*
-| *Dans le second exemple, l'on commencerait par appeler la fonction gather()*
-| *puis l'on appellerait la fonction changeMap("left") avec comme argument "left".*
+.. caution::
 
-Déplacements simples
-^^^^^^^^^^^^^^^^^^^^
+   L'interprétation des actions au sein de actions se fait de gauche à droite.
+   Dans le second exemple, l'on commencerait par appeler la fonction gather()
+   puis l'on appellerait la fonction changeMap("left") avec comme argument "left".
+
+**Déplacements simples**
+^^^^^^^^^^^^^^^^^^^^^^^^
 Pour commencer, il va falloir réaliser un déplacement basique sur une map adjacente.
 
 .. code-block:: lua
@@ -310,16 +320,16 @@ Cette ligne contient plusieurs informations :
 * ``map`` représente les coordonnées de la carte où l'on souhaite exécuter les actions suivantes.
 Cette emplacement peut être exprimé en coordonnées ou en ``mapids`` obtenable via ``/mapid``.
 * ``changeMap`` permet de se déplacer sur une map adjacente à celle où l'on se situe. Ne permet pas l'utilisation d'objets interactifs comme les entrées de mine, les portails, etc.  
-``changeMap`` peut contenir les valeurs suivantes: ``bottom``, ``left``, ``right`` et ``top``. 
+``changeMap`` peut contenir les valeurs suivantes : ``bottom``, ``left``, ``right`` et ``top``. 
 
-Si vous souhaitez vous déplacez sur une cellule sur la map où vous vous situez, il faut utiliser ceci:
+Si vous souhaitez vous déplacez sur une cellule sur la map où vous vous situez, il faut utiliser ceci :
 
 .. code-block:: lua
 
    {map = "[0,0]", actions = move("c<CELL_ID>")}
 
-Récoltes et combats
-^^^^^^^^^^^^^^^^^^^
+**Récoltes et combats**
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Pour récolter des ressources, il suffit de mettre l'action ``gather`` à ``true``.
 Le personnage ne récoltera que les ressources présentent dans le fichier de configuration.
@@ -343,17 +353,19 @@ Le personnage ne combattra que les groupes suivants les données présentent dan
 
    {map = "[0,0]", actions = fight = true}
 
-Nota Bene: Si vous souhaitez récolter les ressources ou combattre les monstres présentent sur la map où vous avez lancer le trajet, il suffit de mettre ceci:
+.. note::
+
+   Si vous souhaitez récolter les ressources ou combattre les monstres présentent sur la map où vous avez lancer le trajet, il suffit de mettre ceci :
 
 .. code-block:: lua
 
    {map = "any", actions = {fight(), gather()}}
 
-Objets interactifs
-^^^^^^^^^^^^^^^^^^
+**Objets interactifs**
+^^^^^^^^^^^^^^^^^^^^^^
 
 Si vous souhaitez interagir avec des objets interactifs, les objets sur lesquelles vous cliquez, c'est le cas avec les des portes, certains escaliers, des leviers, etc...
-Il suffit de remplacer l'action ``changeMap`` par ``gather``:
+Il suffit de remplacer l'action ``changeMap`` par ``gather`` :
 
 .. code-block:: lua
 
@@ -361,11 +373,14 @@ Il suffit de remplacer l'action ``changeMap`` par ``gather``:
    -- Exemple :
    {map = "[0, 0]", actions = {fight = true, gather = "c459"}}
 
-PNJ
-^^^
+**PNJ**
+^^^^^^^
 
 Si vous souhaitez interagir avec des Personnages Non-Joueurs (PNJ), il suffit d'utiliser l'action ``npc`` qui signifie Non-Player Character, l'anglais de PNJ:
-*⚠️ Il n'y qu'une seule action par map, dans les exemples qui suivent, il n'y a donc pas besoin de mettre ``{}`` mais ne les oubliez pa si vous spécifiez plusieures actions*
+
+.. caution::
+
+   *Il n'y qu'une seule action par map, dans les exemples qui suivent, il n'y a donc pas besoin de mettre de {} mais ne les oubliez pa si vous spécifiez plusieures actions.*
 
 .. code-block:: lua
 
@@ -374,11 +389,23 @@ Si vous souhaitez interagir avec des Personnages Non-Joueurs (PNJ), il suffit d'
    {map = "[0, 0]", actions = npc(-20000, -1, -1,-1)}
 
 Se traduit par : 
-   *„ Parle au npc -20 000, avec la première option et ça répond avec les premiers truc possible dans les réponses ^^ “*
-   *Un grand merci à toi, Nicogo pour cet exemple de QUALITAIENT (ceci est une réf' 💋 TheFrenchCoder)*
+   | *„ Parle au npc -20 000, avec la première option et ça répond avec les premiers truc possible dans les réponses ^^ “*
+   | *Un grand merci à toi, Nicogo pour cet exemple de QUALITAIENT*
+   | (La petite réf' 💋 TheFrenchCoder)*
 
-Havre-Sac, Zaap & Zaapi
-^^^^^^^^^^^^^^^^^^^^^^^
+
+**Craft**
+^^^^^^^^^
+
+Si vous souhaitez craft des items, il suffit d'utiliser l'action ``craft``:
+
+.. code-block:: lua
+
+   {map = "[0, 0]", actions = craft(<itemToCraft>, <Amount>)}
+                                       (GID)         (int)
+
+**Havre-Sac, Zaap & Zaapi**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Si vous souhaitez accéder à votre Havre-Sac, il suffit d'écrire:
 
@@ -401,20 +428,101 @@ Pour accéder à un zaap ou zaapi, il existe deux actions prévues à cet effet:
    -- Utliser un zaapi
    {map="[0, 0]", actions = zaapi("<Zaapi_ID>")}
 
-Banque
-^^^^^^
+**Banque**
+^^^^^^^^^^
 
-Pour déposer des items, Kamas en banque il suffit d'utiliser l'action bank comme suit:
+Pour déposer des items, Kamas en banque il suffit d'utiliser l'action ``bank`` comme suit:
 
 .. code-block:: lua
 
-   {map = "[0, 0]", actions = bank(true)}
+   {map = "[0, 0]", actions = bank(true)} -- pour tous déposer ( Kamas + Items + Idoles )
+   {map = "[0, 0]", actions = bank(json)
 
-Maison
-^^^^^^
+| Le Json ressemble à ça :
+
+.. note::
+
+   ▶️ Toutes les clés sont optionnelles 
+
+* ItemsToDeposit : (?int[])
+   * null : dépose tout
+   * Tableau json avec les GID des items à déposer
+* ItemsToTake : (?int[])
+   * null : rien prendre
+   * Tableau json avec les GID des items à prendre
+* KamasMove : (int ±)
+   * null : rien prendre
+   * +x : ... x Kamas
+   * -x : ... x Kamas
+
+   (Faites une issue pour présicer le fonctionnement)
+
+.. code-block:: json
+
+   {
+      "ItemsToDeposit":null,
+      "ItemsToTake":null,
+      "KamasMove":0
+   }
+
+**Maison**
+^^^^^^^^^^
 
 La possibilité d'accéder à une maison, n'est malheureusement indisponible lors de cette open-beta...
 
-FonctionCustom
+**FonctionCustom**
+^^^^^^^^^^^^^^^^^^
 
-Vous exagérez là, je vais pas vous expliquer comment créer une fonction, allez lire bon sang !
+| Vous exagérez là, je vais pas vous expliquer comment créer une fonction.
+| Bon allez j'suis sympa j'vais vous expliquez !
+
+**Les configurations**
+======================
+
+La configuration dont être dans un fichier .lua.
+
+**Combats**
+-----------
+
+* Les groupes
+
+Il faut réaliser deux configurations:
+
+   1. Le maître : 
+
+      config-master.lua >>
+
+         .. code-block:: lua
+
+            function master()
+               return "true" -- (par défaut)
+            end
+            function groupName()
+               return "<Groupe_Name>"
+            end
+
+   2. Le(s) esclave(s) : 
+
+      config-master.lua >>
+
+         .. code-block:: lua
+
+            function master()
+               return "false"
+            end
+            function groupName()
+               return "<Groupe_Name>"
+            end
+
+.. caution:: ``<Groupe_Name>`` doit être identique entre la config' du maître et celle du/des esclave(s)
+
+
+* La configuration général
+
+UseWhitelist => true (Use Whitelist) || false (Use Blacklist)
+BlackListedMonsters => [] (list of monster's ID)
+WhiteListedMonsters => [] (list of monster's ID)
+MinMonsters => 1 (par défaut)
+MaxMonsters => 8 (par défaut)
+MinLife =>
+

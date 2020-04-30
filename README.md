@@ -13,10 +13,10 @@
 
 ## Commits
 
-Title:
-    - Add (<file_name>) <part_name>
-    - Remove (<file_name>) <part_name>
-    - Fix <"rST Syntaxe" || "Grammar"> : <section_name>
+Title:  
+    - Add (<file_name>) <part_name>  
+    - Remove (<file_name>) <part_name>  
+    - Fix <"rST Syntaxe" || "Grammar"> : <section_name>  
 
 Content : Optionnal
     Briefly describe why you made these changes
