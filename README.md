@@ -22,12 +22,13 @@ Content : Optionnal
     Briefly describe why you made these changes
 
 La documentation est écrite en .rst soit en reStructuredText, voici quelques ressources si vous souhaitez contribuer:  
-The documentation is written in .rst or reStructuredText, here are some resources if you wish to contribute:
+The documentation is written in .rst or reStructuredText, here are some resources if you wish to contribute:  
 - FR : https://github.com/DevDungeon/reStructuredText-Documentation-Reference#introduction  
+- FR : http://python.physique.free.fr/aide/Partie1.html  
 - EN : http://espe-rtd-reflexpro.u-ga.fr/docs/sandbox2/fr/latest/syntaxe_rest.html  
-- EN : http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
-- EN : https://www.sphinx-doc.org/en/master/
-- EN : https://www.ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/
+- EN : http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html  
+- EN : https://www.sphinx-doc.org/en/master/  
+- EN : https://www.ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/  
 ## Change important inforamtion in conf.py
 
 **In `docs/conf.py`:**
@@ -47,6 +48,17 @@ version = u'1.0'
 # Adapter à la version | Adapting to the FriendlyBot version
 release = u'closed-beta'
 ```
+
+# Sphinx themes
+
+## Current theme
+
+[Take a look at](https://sphinx-rtd-theme.readthedocs.io)
+
+## Suggest a Sphinx theme
+
+Create a issue 
+
 
 # How to create a PDF with Sphinx documentation tool
 
