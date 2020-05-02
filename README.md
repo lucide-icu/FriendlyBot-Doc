@@ -11,6 +11,11 @@
 7. Respond to any code review feedback.
 
 
+## To use
+
+* **Quotes**  
+    Please consider the use of **German typographical quotation marks** ( „ hello world ! “ ), if you want to use quotation marks.
+
 ## Commits
 
 Title:  
