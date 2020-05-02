@@ -1,2 +1,3 @@
-Sphinx
+wheel
+sphinx
 sphinx_rtd_theme
