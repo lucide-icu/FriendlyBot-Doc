@@ -10,6 +10,21 @@
 6. Create a new PR in GitHub.
 7. Respond to any code review feedback.
 
+## Setting up your workspace
+
+* [Download Python](https://www.python.org/downloads/) ( don't forget to install „ pip “)
+* Install the dependencies  
+    In your cmd :  
+    * Go to path/to/FriendlyBot-Doc
+    * Run **pip install -r requierements.txt**
+    * Go to **./docs**
+    * Run **make.bat** to see the possible exports as target
+    * Run **make \<target\>** to build the the documentation in the corresponding output.
+    * Go to **/build** look for the corresponding target output.
+
+## Setting up your workspace
+
+* If **make.bat** return you a error, uninstall python and follow the guide above.
 
 ## To use
 

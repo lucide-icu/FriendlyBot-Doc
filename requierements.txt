@@ -1,0 +1,3 @@
+sphinx # Install Sphinx
+sphinx_rtd_theme # Install Sphinx theme : Read The Docs
+rst2pdf # Install rST2PDF to generate a PDF file of the documentation
