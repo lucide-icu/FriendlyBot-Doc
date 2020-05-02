@@ -50,24 +50,30 @@ Les membres premium
 **Foire aux questions (FAQ)**
 ================================
 
-   Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œil par ici, avant de poster une demande d'aide sur le forum.
-      1. Cela vous évitera d'écrire pour rien.
-      2. Cela permettra aux administrateurs de se concentrer sur des soucis encore non résolu.
+Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œil par ici, avant de poster une demande d'aide sur le forum.
+
+   1. Cela vous évitera d'écrire pour rien.
+   2. Cela permettra aux administrateurs de se concentrer sur des soucis encore non résolus.
 
 **1. J'ai une erreur d'identification lorsque je me connecte sur le logiciel.**
 -------------------------------------------------------------------------------
 
-   * Vous avez entré des identifiants erronés.
-   * Vous avez fermé récemment le logiciel, vous devez attendre quelques minutes.
+toto
+
+➡️ Vous avez entré des identifiants erronés.
+
+➡️ Vous avez fermé récemment le logiciel, vous devez attendre quelques minutes.
    
 **2. J'essaie d'ouvrir l'éxécutable FriendlyBot.exe mais rien ne se passe.**
 ----------------------------------------------------------------------------
 
-   * Suprimer le fichier temporaire de FriendlyBot :
-      * ``Windows + R`` >> ``%appdata%`` >> ``Entrer``.
-      * Remonter d'un dossier.
-      * Chercher le dossier „ FriendlyBot “ et supprimer le.
-   * Supprimer le dossier „ plugins “ situe à côté de l'éxécutable.
+➡️ Suprimer le fichier temporaire de FriendlyBot :
+
+   * ``Windows + R`` >> ``%appdata%`` >> ``Entrer``.
+   * Remonter d'un dossier.
+   * Chercher le dossier „ FriendlyBot “ et supprimer le.
+
+➡️ Supprimer le dossier „ plugins “ situe à côté de l'éxécutable.
 
 ****************
 **Installation**
@@ -76,13 +82,16 @@ Les membres premium
 **Pré-requis**
 ==============
 
-| FriendlyBot nécessité certains logiciels externes pour fonctionner correctement.
+| FriendlyBot nécessite certains logiciels externes pour fonctionner correctement.
 | FriendlyBot est développé en C#, un langage informatique multiplateformes et est donc disponible sous Windows, Linux et Mac. 
 | Rendez vous sur le site `dotnet.microsoft.com`_ pour télécharger .NET, vous aurez deux choix :
 
-* Vous souhaitez utiliser FriendlyBot de façon classique, installez :
+➡️ Vous souhaitez utiliser FriendlyBot de façon classique, installez :
+
    **Run Apps .NET Core Runtime**
-* Si vous souhaitez développer vos propres plugins pour FriendlyBot, installez :
+
+➡️ Si vous souhaitez développer vos propres plugins pour FriendlyBot, installez :
+
    **Buils Apps .NET Core SDK**
 
 .. note::
@@ -191,6 +200,7 @@ réaliser un trajet avec FriendlyBot.
          -- Le trajet et les actions à réaliser lorsque le bot sors
          -- des autres trajets
       }
+   end
 
    function deadPath()
       return {
@@ -305,8 +315,8 @@ Le mot clé ``actions`` renseigne toutes les actions à réaliser au sein des ma
 .. caution::
 
    L'interprétation des actions au sein de actions se fait de gauche à droite.
-   Dans le second exemple, l'on commencerait par appeler la fonction gather()
-   puis l'on appellerait la fonction changeMap("left") avec comme argument "left".
+   Dans le second exemple, l'on commencerait par appeler la fonction ``gather()``
+   puis l'on appellerait la fonction ``changeMap("left")`` avec comme argument „ left “.
 
 **Déplacements simples**
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -380,7 +390,7 @@ Si vous souhaitez interagir avec des Personnages Non-Joueurs (PNJ), il suffit d'
 
 .. caution::
 
-   *Il n'y qu'une seule action par map, dans les exemples qui suivent, il n'y a donc pas besoin de mettre de {} mais ne les oubliez pa si vous spécifiez plusieures actions.*
+   *Il n'y a qu'une seule action par map, dans les exemples qui suivent, il n'y a donc pas besoin de mettre de {} mais ne les oubliez pa si vous spécifiez plusieures actions.*
 
 .. code-block:: lua
 
@@ -455,7 +465,7 @@ Pour déposer des items, Kamas en banque il suffit d'utiliser l'action ``bank`` 
    * +x : ... x Kamas
    * -x : ... x Kamas
 
-   (Faites une issue pour présicer le fonctionnement)
+   (Faites une issue pour préciser le fonctionnement)
 
 .. code-block:: json
 
