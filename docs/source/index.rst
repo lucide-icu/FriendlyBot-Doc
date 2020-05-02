@@ -50,30 +50,24 @@ Les membres premium
 **Foire aux questions (FAQ)**
 ================================
 
-Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œil par ici, avant de poster une demande d'aide sur le forum.
-
-   1. Cela vous évitera d'écrire pour rien.
-   2. Cela permettra aux administrateurs de se concentrer sur des soucis encore non résolus.
+   Si vous avez un problème avec FriendlyBot, pensez à jeter un petit coup d’œil par ici, avant de poster une demande d'aide sur le forum.
+      1. Cela vous évitera d'écrire pour rien.
+      2. Cela permettra aux administrateurs de se concentrer sur des soucis encore non résolus.
 
 **1. J'ai une erreur d'identification lorsque je me connecte sur le logiciel.**
 -------------------------------------------------------------------------------
 
-toto
-
-➡️ Vous avez entré des identifiants erronés.
-
-➡️ Vous avez fermé récemment le logiciel, vous devez attendre quelques minutes.
+   * Vous avez entré des identifiants erronés.
+   * Vous avez récemment fermé le logiciel, vous devez attendre quelques minutes avant de le rouvrir.
    
 **2. J'essaie d'ouvrir l'éxécutable FriendlyBot.exe mais rien ne se passe.**
 ----------------------------------------------------------------------------
 
-➡️ Suprimer le fichier temporaire de FriendlyBot :
-
-   * ``Windows + R`` >> ``%appdata%`` >> ``Entrer``.
-   * Remonter d'un dossier.
-   * Chercher le dossier „ FriendlyBot “ et supprimer le.
-
-➡️ Supprimer le dossier „ plugins “ situe à côté de l'éxécutable.
+   * Suprimer le fichier temporaire de FriendlyBot :
+      * ``Windows + R`` >> ``%appdata%`` >> ``Entrer``.
+      * Remonter d'un dossier.
+      * Chercher le dossier „ FriendlyBot “ et supprimer le.
+   * Supprimer le dossier „ plugins “ situe à côté de l'éxécutable.
 
 ****************
 **Installation**
@@ -86,17 +80,14 @@ toto
 | FriendlyBot est développé en C#, un langage informatique multiplateformes et est donc disponible sous Windows, Linux et Mac. 
 | Rendez vous sur le site `dotnet.microsoft.com`_ pour télécharger .NET, vous aurez deux choix :
 
-➡️ Vous souhaitez utiliser FriendlyBot de façon classique, installez :
-
+* Vous souhaitez utiliser FriendlyBot de façon classique, installez :
    **Run Apps .NET Core Runtime**
-
-➡️ Si vous souhaitez développer vos propres plugins pour FriendlyBot, installez :
-
+* Si vous souhaitez développer vos propres plugins pour FriendlyBot, installez :
    **Buils Apps .NET Core SDK**
 
 .. note::
 
-   ▶️ : Veuillez à choisir la version correspondant à votre système d'exploitation, Windows, Linux ou OSX.*
+   ▶️ : Veillez à choisir la version correspondant à votre système d'exploitation, Windows, Linux ou OSX.*
 
 .. _dotnet.microsoft.com: https://dotnet.microsoft.com/download
 
@@ -108,48 +99,48 @@ toto
 ============================
 
 | Vous voilà sur le premier chapitre de la section traitant "Les Trajets".
-| Que vous soyez débutant ou expert en programmation, cette section vous expliquera tout ce que vous devez savoir sur le Lua.
+| Que vous soyez débutant ou expert en programmation, cette section vous expliquera tout ce que vous devez savoir sur le LUA.
 
-**Le Lua, quèsaco ?**
+**Le LUA, quèsaco ?**
 ---------------------
 
-| *Lua est un langage de script [...] conçu de manière à pouvoir être embarqué au sein d'autres applications afin d'étendre celles-ci.*
-| `Wikipédia - Lua`_
+| *LUA est un langage de script [...] conçu de manière à pouvoir être embarqué au sein d'autres applications afin d'étendre celles-ci.*
+| `Wikipédia - LUA`_
 
-.. _`Wikipédia - Lua`: https://fr.wikipedia.org/wiki/Lua
+.. _`Wikipédia - LUA`: https://fr.wikipedia.org/wiki/Lua
 
-| Nous allons te présenter le langage Lua afin que tu puissiez
+| Nous allons te présenter le langage LUA afin que vous puissiez
 | réaliser vos rêves sur **Le Monde des Douze**.
 
 **Le type de fichier**
 ----------------------
 
-| En informatique, les fichiers possèdent tous une extension, cela permet  d'identifier le format du fichier via ce suffixe.
-| On peut noter, le fichier de texte basique se termine en .txt , un fichier sonore en .mp3,un fichier exécutable en .exe et ainsi de suite.
+| En informatique, les fichiers possèdent tous une extension, cela permet d'identifier le format du fichier via ce suffixe.
+| On peut noter que le fichier de texte basique se termine en .txt , un fichier sonore en .mp3, un fichier exécutable en .exe et ainsi de suite.
  
 | Le lua fonctionne lui avec des fichiers en .lua
 
-| FriendlyBot ne prend en charge que les lua pour ses trajets,
+| FriendlyBot ne prend en charge que les .lua pour ses trajets,
 | vous allez devoir développer votre code en lua et donc avec l'extension .lua.
 
-| Sur Windows, vous ne pouvez pas voir voir et modifier les extensions des fichiers par défaut.
+| Sur Windows, vous ne pouvez par défaut pas voir voir et modifier les extensions des fichiers.
 | Vous pouvez affic| her les extensions après le nom du ficher et obtenir cette syntaxe :
-| ``<nom du fichier>.<extension du fichier>``, cela peux vous être utile en dehors du boting 🙂
+| ``<nom du fichier>.<extension du fichier>``, cela peux vous être utile en dehors du botting 🙂
 
 **Afficher les extensions**
 ---------------------------
 
-* Ouvrer votre "Explorateur de fichiers"
+* Ouvrez votre "Explorateur de fichiers"
 * Appuyez sur le bouton "Affichage" présent en haut de la fenêtre.
 * Cochez la case " Extensions de noms de fichiers "
-* Rendez vous où vous voulez sur votre ordinateur et constatez l'apparition des extensions à la suite du nom des fichiers.
+* Rendez-vous où vous voulez sur votre ordinateur et constatez l'apparition des extensions à la suite du nom des fichiers.
 
 *Une image arrive prochainement 💋 TheFrenchCoder*
 
 **Création du fichier .lua**
 ----------------------------
 
-Maintenant que vous pouvez voir toute la beauté des extensions des fichiers présent sur votre ordinateur,
+Maintenant que vous pouvez voir toute la beauté des extensions des fichiers présents sur votre ordinateur,
 vous allez pouvoir créer votre premier fichier en .lua afin d'y placer tous le code nécessaire pour
 réaliser un trajet avec FriendlyBot.
 
@@ -165,9 +156,9 @@ réaliser un trajet avec FriendlyBot.
 
 .. note::
 
-   ▶️ Il s'agit d'un sécurité de Windows, car l'extension renseigne égalementsur le formatage du fichier, ne vous en souciez pas.
+   ▶️ Il s'agit d'un sécurité de Windows, car l'extension renseigne également sur le formatage du fichier, ne vous en souciez pas.
 
-| Vous avez maintenant un fichier lua près à être rempli pour réaliser votre
+| Vous avez maintenant un fichier .lua près à être rempli pour réaliser votre
 | premier trajet avec FriendlyBot.
 
 **Structure**
@@ -177,34 +168,33 @@ réaliser un trajet avec FriendlyBot.
 ----------------------------
 
 | Voici un trajet simpliste, dépourvu de toutes instructions contenant
-| toutes les instructions indispensable :
+| toutes les instructions indispensables :
 
 .. code-block:: lua
 
    function movePath()
       return {
-         -- Les actions que le bot devra éxécuter les déplacements,
+         -- Les actions que le bot devra éxécuter : les déplacements,
          -- les récoltes, les combats
       }
    end
 
    function bankPath()
       return {
-         -- Le trajet à réaliser pour aller en banque lorsque le
-         -- personnage est en surpoids
+         -- Le trajet à réaliser pour aller en banque lorsque
+         -- l'inventaire du personnage est plein
       }
    end
 
    function lostPath()
       return {
-         -- Le trajet et les actions à réaliser lorsque le bot sors
-         -- des autres trajets
+         -- Le trajet et les actions à réaliser lorsque le bot
+         -- est perdu
       }
-   end
 
    function deadPath()
       return {
-         -- Le trajet à réaliser pour aller au phoenix lorsque le
+         -- Le trajet à réaliser pour aller au phenix lorsque le
          -- personnage est en "fantôme"
       }
    end
@@ -224,20 +214,20 @@ Elle est appelée lorsque l'inventaire du joueur dépasse un pourcentage fixée 
 **Fonction « lostPath »**
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-La fonction bankPath contient toutes les actions permettant au bot de retrouver son chemin. Si le bot est perdu, il exécute les actions contenu ici. Une fois qu'il se retrouve sur un chemin, celui de movePath en général, celui de bankPath si il est considéré comme "full" ou encore celui de deadPath si il est en fantôme.
+La fonction bankPath contient toutes les actions permettant au bot de retrouver son chemin. Si le bot est perdu, il exécute les actions contenues ici. Une fois qu'il se retrouve sur un chemin, celui de movePath en général, celui de bankPath s'il est considéré comme "full" ou encore celui de deadPath s'il est en fantôme.
 
 **Fonction « deadPath »**
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| *PAS ENCORE IMPLÉMENTÉ* 😢
+| *PAS ENCORE IMPLÉMENTÉE* 😢
 | C'est qu'un beta fermée, déso la plèbe 🙃
 
 **Fonctions personnalisées**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Il est bien évidement possible de rajouter ses propres fonctions au sein du fichier lua et de les utilisées au sein des fonctions "primaires".
+Il est bien évidemment possible de rajouter ses propres fonctions au sein du fichier .lua et de les utiliser au sein des fonctions "primaires".
 
-Maintenant que vous avez bien en tête la structure des fichiers de trajets en lua et leurs fonctions. Il va falloir fournir ces quatre fonctions d'actions afin d'expliquer au bot ce que l'on attend lui, c'est ce que nous allons voir dans le prochain chapitre « Actions ».
+Maintenant que vous avez bien en tête la structure des fichiers de trajets en LUA et leurs fonctions, il va falloir fournir ces quatre fonctions d'actions afin d'expliquer au bot ce que l'on attend lui, c'est ce que nous allons voir dans le prochain chapitre « Actions ».
 
 **Actions**
 ===========
@@ -245,15 +235,15 @@ Maintenant que vous avez bien en tête la structure des fichiers de trajets en l
 **Mise au point**
 ----------------------------
 
-Comme vu dans le chapitre précédent, les fonctions écrites en lua retournent à FriendlyBot les actions à réalisé elles même regroupée au sein de table qui sont situé entre les crochets du mot clé ``return`` :
+Comme vu dans le chapitre précédent, les fonctions écrites en LUA retournent à FriendlyBot les actions à réaliser elles-mêmes regroupées au sein de tables qui sont situées entre les crochets du mot clé ``return`` :
 
 * Le mot clé ``return``  renvoie les tables.
 
-* Les tables contiennent les actions à réalisés sur une ou plusieurs map.
+* Les tables contiennent les actions à réaliser sur une ou plusieurs maps.
 
-   * Les tables sont séparé par une virgule pour expliquer à FriendlyBot qu'il y'a encore d'autres tables après elles.
+   * Les tables sont séparées par une virgule pour expliquer à FriendlyBot qu'il y'a encore d'autres tables après.
 
-   * La table finale ne se "termine" donc pas avec une virgule
+   * La table finale ne se "termine" donc pas avec une virgule.
 
 
 .. code-block:: lua
@@ -261,8 +251,8 @@ Comme vu dans le chapitre précédent, les fonctions écrites en lua retournent 
    function movePath()
       return {
          {<ma_première_table> }, -- première, 1ère table => 1 virgule
-         {<ma_deuxième_table> }, -- médianes, 2ème table => 1 virgule
-         {<ma_troisème_table> }, -- médianes, 3ème table => 1 virgule
+         {<ma_deuxième_table> }, -- médiane, 2ème table => 1 virgule
+         {<ma_troisème_table> }, -- médiane, 3ème table => 1 virgule
          {<ma_troisième_table>}  -- dernière, 4ème table => ∅ virgule
       }
    end
@@ -279,8 +269,8 @@ Il existe différents types d'actions, c'est ce que nous allons voir maintenant 
 
 **Maps**
 ^^^^^^^^
-Le mot clé ``maps`` peut utiliser à la fois les **coordonnées** (abscisse, ordonnée) de la map obtenable en regardant sur la carte de Dofus mais aussi son id appelé le **mapId** obtenable en exécutant dans le chat en jeu ou via la console de FrienldyBot **/mapid**.
-Il est possible de définir les maps une à une ou via une liste alias une table en lua, si l'on souhaite réaliser plusieurs fois la même action :
+Le mot clé ``maps`` peut utiliser à la fois les **coordonnées** (abscisse, ordonnée) de la map obtenable en regardant sur la carte de Dofus mais aussi son id appelé le **mapId** obtenable en exécutant dans le tchat du jeu ou via la console de FrienldyBot **/mapid**.
+Il est possible de définir les maps une à une ou via une liste (une table en LUA), si l'on souhaite réaliser plusieurs fois la même action :
 
 .. code-block:: lua
 
@@ -294,7 +284,7 @@ Il est possible de définir les maps une à une ou via une liste alias une table
 **Les tables**
 ^^^^^^^^^^^^^^
 
-Le mot clé ``actions`` renseigne toutes les actions à réaliser au sein des maps définit par ``maps``. (Le code suivant serra sous la forme de „ vue en éclaté “)
+Le mot clé ``actions`` renseigne toutes les actions à réaliser au sein des maps définies dans ``maps``. (Le code suivant serra sous la forme de „ vue en éclaté “)
 
 .. code-block:: lua
 
@@ -314,9 +304,10 @@ Le mot clé ``actions`` renseigne toutes les actions à réaliser au sein des ma
 
 .. caution::
 
-   L'interprétation des actions au sein de actions se fait de gauche à droite.
-   Dans le second exemple, l'on commencerait par appeler la fonction ``gather()``
-   puis l'on appellerait la fonction ``changeMap("left")`` avec comme argument „ left “.
+   La lecture des actions à effectuer par FriendlyBot se fait de gauche à droite.
+   Dans le second exemple, on commence par appeler la fonction gather()
+   puis l'on appelle la fonction changeMap() avec comme argument "left", ce qui donne changeMap("left").
+   (Pour lui dire de se déplacer vers la gauche.)
 
 **Déplacements simples**
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -329,10 +320,10 @@ Pour commencer, il va falloir réaliser un déplacement basique sur une map adja
 Cette ligne contient plusieurs informations :
 * ``map`` représente les coordonnées de la carte où l'on souhaite exécuter les actions suivantes.
 Cette emplacement peut être exprimé en coordonnées ou en ``mapids`` obtenable via ``/mapid``.
-* ``changeMap`` permet de se déplacer sur une map adjacente à celle où l'on se situe. Ne permet pas l'utilisation d'objets interactifs comme les entrées de mine, les portails, etc.  
-``changeMap`` peut contenir les valeurs suivantes : ``bottom``, ``left``, ``right`` et ``top``. 
+* ``changeMap`` permet de se déplacer sur une map adjacente à celle où l'on se situe. Attention, elle ne permet pas l'utilisation d'objets interactifs comme les entrées de mine, les portails, etc...  
+``changeMap`` peut contenir les valeurs suivantes : ``bottom``, ``left``, ``right`` et ``top``.
 
-Si vous souhaitez vous déplacez sur une cellule sur la map où vous vous situez, il faut utiliser ceci :
+Si vous souhaitez vous déplacer sur une cellule sur la map où vous vous situez, il faut utiliser ceci :
 
 .. code-block:: lua
 
@@ -341,8 +332,8 @@ Si vous souhaitez vous déplacez sur une cellule sur la map où vous vous situez
 **Récoltes et combats**
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Pour récolter des ressources, il suffit de mettre l'action ``gather`` à ``true``.
-Le personnage ne récoltera que les ressources présentent dans le fichier de configuration.
+Pour récolter des ressources, il suffit de mettre l'action ``gather`` dans l'état ``true``.
+Le personnage ne récoltera que les ressources présentes dans le fichier de configuration.
 
 .. code-block:: lua
 
@@ -356,8 +347,8 @@ Il est aussi possible de récolter les éléments récoltables via :
 
    {map = "[0,0]", actions = gather("i<ElemTypeId>")}
 
-Pour combattre des monstres, il suffit de mettre l'action ``fight`` à ``true``.
-Le personnage ne combattra que les groupes suivants les données présentent dans le fichier de configuration.
+Pour combattre des monstres, il suffit de mettre l'action ``fight`` dans l'état ``true``.
+Le personnage ne combattra que les groupes suivants les données présentes dans le fichier de configuration.
 
 .. code-block:: lua
 
@@ -365,7 +356,7 @@ Le personnage ne combattra que les groupes suivants les données présentent dan
 
 .. note::
 
-   Si vous souhaitez récolter les ressources ou combattre les monstres présentent sur la map où vous avez lancer le trajet, il suffit de mettre ceci :
+   Si vous souhaitez récolter les ressources ou combattre les monstres présents sur la map où vous avez lancé le trajet, il suffit de mettre ceci :
 
 .. code-block:: lua
 
@@ -374,8 +365,7 @@ Le personnage ne combattra que les groupes suivants les données présentent dan
 **Objets interactifs**
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Si vous souhaitez interagir avec des objets interactifs, les objets sur lesquelles vous cliquez, c'est le cas avec les des portes, certains escaliers, des leviers, etc...
-Il suffit de remplacer l'action ``changeMap`` par ``gather`` :
+Si vous souhaitez interagir avec des objets interactifs (les objets sur lesquelles vous cliquez en temps normal comme c'est le cas avec les des portes, certains escaliers, des leviers, etc...), il suffit de remplacer l'action ``changeMap`` par ``gather`` :
 
 .. code-block:: lua
 
@@ -386,17 +376,17 @@ Il suffit de remplacer l'action ``changeMap`` par ``gather`` :
 **PNJ**
 ^^^^^^^
 
-Si vous souhaitez interagir avec des Personnages Non-Joueurs (PNJ), il suffit d'utiliser l'action ``npc`` qui signifie Non-Player Character, l'anglais de PNJ:
+Si vous souhaitez interagir avec des Personnages Non-Joueurs (PNJ), il suffit d'utiliser l'action ``npc`` qui signifie Non Player Character, l'anglais de PNJ - Personnage Non Joueur :
 
 .. caution::
 
-   *Il n'y a qu'une seule action par map, dans les exemples qui suivent, il n'y a donc pas besoin de mettre de {} mais ne les oubliez pa si vous spécifiez plusieures actions.*
+   *Il n'y qu'une seule action par map, dans les exemples qui suivent, il n'y a donc pas besoin de mettre de {} mais ne les oubliez pas si vous spécifiez plusieures actions.*
 
 .. code-block:: lua
 
    {map = "[0, 0]", actions = npc(NpcID_or_ActorId, ActionID_or_Index, ReplyID_or_Index1, ReplyID|Index2, ...)}
    -- Exemple :
-   {map = "[0, 0]", actions = npc(-20000, -1, -1,-1)}
+   {map = "[0, 0]", actions = npc(-20000, -1, -1, -1)}
 
 Se traduit par : 
    | *„ Parle au npc -20 000, avec la première option et ça répond avec les premiers truc possible dans les réponses ^^ “*
@@ -441,11 +431,11 @@ Pour accéder à un zaap ou zaapi, il existe deux actions prévues à cet effet:
 **Banque**
 ^^^^^^^^^^
 
-Pour déposer des items, Kamas en banque il suffit d'utiliser l'action ``bank`` comme suit:
+Pour déposer des items ou des kamas en banque, il suffit d'utiliser l'action ``bank`` comme suit:
 
 .. code-block:: lua
 
-   {map = "[0, 0]", actions = bank(true)} -- pour tous déposer ( Kamas + Items + Idoles )
+   {map = "[0, 0]", actions = bank(true)} -- pour tous déposer ( Kamas + contenu de l'inventaire )
    {map = "[0, 0]", actions = bank(json)
 
 | Le Json ressemble à ça :
@@ -478,13 +468,13 @@ Pour déposer des items, Kamas en banque il suffit d'utiliser l'action ``bank`` 
 **Maison**
 ^^^^^^^^^^
 
-La possibilité d'accéder à une maison, n'est malheureusement indisponible lors de cette open-beta...
+La possibilité d'accéder à une maison, n'est malheureusement pas disponible pour la version bêta. [A venir]
 
 **FonctionCustom**
 ^^^^^^^^^^^^^^^^^^
 
 | Vous exagérez là, je vais pas vous expliquer comment créer une fonction.
-| Bon allez j'suis sympa j'vais vous expliquez !
+| Bon allez j'suis sympa j'vais vous expliquer !
 
 **Les configurations**
 ======================
